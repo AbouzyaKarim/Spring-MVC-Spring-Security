@@ -16,10 +16,10 @@
 
 <h5>Interface:</h5>
 <p>Page home</p>
-<img src="images/home.PNG">
+<img src="images/Chome.PNG">
 
 <p>Page index</p>
-<img src="images/index.PNG">
+<img src="images/Cap.PNG">
 
 <p>Formulaire d'ajout</p>
 <img src="images/ajouter.PNG">
