@@ -15,4 +15,20 @@
 <hr>
 
 <h5>Interface:</h5>
+<p>Page home</p>
+<img src="images/home.PNG">
+
 <p>Page index</p>
+<img src="images/index.PNG">
+
+<p>Formulaire d'ajout</p>
+<img src="images/ajouter.PNG">
+
+<p>Formulaire pour éditer</p>
+<img src="images/editer.PNG">
+
+<p>Formulaire Login</p>
+<img src="images/login.PNG">
+
+<p>Rechercher un patient</p>
+<img src="images/search.PNG">
