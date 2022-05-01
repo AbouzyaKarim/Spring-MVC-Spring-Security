@@ -1,5 +1,11 @@
 <h3>Introduction</h3>
 <p>Sécuriser L'accès à l'application qui permet de gérer les Patients en utilisant Spring Security</p>
+<p>Trois Stratégies utilisées:</p>
+<ul>
+ <li> InMemoryAuthentication</li>
+ <li> JDBCAuthentication</li>
+ <li> UserDetailsService</li>
+</ul>
 <h5>Objectif:</h5>
 <p>L'accès à l'application doit nécessite une Authentification avec username et un mot de passe.</p>
 
