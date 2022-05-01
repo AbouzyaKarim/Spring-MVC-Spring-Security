@@ -36,7 +36,7 @@
 <img src="images/modifierP.PNG">
 
 <p>Rechercher un patient</p>
-<img src="images/search.PNG">
+<img src="images/searchP.PNG">
 
 <br>
 <br>
