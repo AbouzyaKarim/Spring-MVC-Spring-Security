@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -10,56 +10,63 @@ xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
 <body>
 
 <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
-  <div class="container-fluid">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active"  th:href="@{/user/index}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hospital" viewBox="0 0 16 16">
-            <path d="M8.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1h1ZM13.25 9a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Zm.25 1.75a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5Zm-11-4a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 9.75v-.5A.25.25 0 0 0 2.75 9h-.5Zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Z"/>
-            <path d="M5 1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1a1 1 0 0 1 1 1v4h3a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1V1Zm2 14h2v-3H7v3Zm3 0h1V3H5v12h1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3Zm0-14H6v1h4V1Zm2 7v7h3V8h-3Zm-8 7V8H1v7h3Z"/>
-        </svg> Hospital</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#">
-            Medecin</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Consultation</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active"  href="#">RendezVous</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
-          Patients
-        </a>
-        <ul class="dropdown-menu">
-          <!--<li><a class="dropdown-item" sec:authorize="hasRole('ADMIN')" th:href="@{/admin/formPatient}">Nouveau Patient</a></li>-->
-            <li><a class="dropdown-item" sec:authorize="hasAuthority('ADMIN')" th:href="@{/admin/formPatient}">Nouveau Patient</a></li>
-          <li><a class="dropdown-item" th:href="@{/user/index}">Chercher Patient</a></li>
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active"  th:href="@{/user/index}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hospital" viewBox="0 0 16 16">
+                    <path d="M8.5 5.034v1.1l.953-.55.5.867L9 7l.953.55-.5.866-.953-.55v1.1h-1v-1.1l-.953.55-.5-.866L7 7l-.953-.55.5-.866.953.55v-1.1h1ZM13.25 9a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM13 11.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Zm.25 1.75a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5Zm-11-4a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5A.25.25 0 0 0 3 9.75v-.5A.25.25 0 0 0 2.75 9h-.5Zm0 2a.25.25 0 0 0-.25.25v.5c0 .138.112.25.25.25h.5a.25.25 0 0 0 .25-.25v-.5a.25.25 0 0 0-.25-.25h-.5ZM2 13.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-.5Z"/>
+                    <path d="M5 1a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1a1 1 0 0 1 1 1v4h3a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h3V3a1 1 0 0 1 1-1V1Zm2 14h2v-3H7v3Zm3 0h1V3H5v12h1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3Zm0-14H6v1h4V1Zm2 7v7h3V8h-3Zm-8 7V8H1v7h3Z"/>
+                </svg> Hospital</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                    Medecins
+                </a>
+                <ul class="dropdown-menu">
+                    <!--<li><a class="dropdown-item" sec:authorize="hasRole('ADMIN')" th:href="@{/admin/formPatient}">Nouveau Patient</a></li>-->
+                    <li><a class="dropdown-item" sec:authorize="hasAuthority('ADMIN')" th:href="@{/admin/formMedecin}">Nouveau Medecin</a></li>
+                    <li><a class="dropdown-item" th:href="@{/user/medecins/index}">Chercher Medecin</a></li>
+
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Consultation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active"  href="#">RendezVous</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                    Patients
+                </a>
+                <ul class="dropdown-menu">
+                    <!--<li><a class="dropdown-item" sec:authorize="hasRole('ADMIN')" th:href="@{/admin/formPatient}">Nouveau Patient</a></li>-->
+                    <li><a class="dropdown-item" sec:authorize="hasAuthority('ADMIN')" th:href="@{/admin/formPatient}">Nouveau Patient</a></li>
+                    <li><a class="dropdown-item" th:href="@{/user/index}">Chercher Patient</a></li>
+
+                </ul>
+            </li>
+        </ul>
+        <ul class="navbar-nav" >
+            <li class="nav-item dropdown" sec:authorize="isAuthenticated()">
+                <a  class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                        <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+                    </svg>
+                    <span sec:authentication="name" ></span>
+                </a>
+
+                <ul class="dropdown-menu" >
+                    <li><a class="dropdown-item" th:href="@{/logout}">Logout</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active"sec:authorize="!isAuthenticated()" th:href="@{/login}">Login</a>
+            </li>
+
 
         </ul>
-      </li>
-    </ul>
-    <ul class="navbar-nav" >
-      <li class="nav-item dropdown" sec:authorize="isAuthenticated()">
-          <a  class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
-                  <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
-              </svg>
-            <span sec:authentication="name" ></span>
-          </a>
-
-          <ul class="dropdown-menu" >
-            <li><a class="dropdown-item" th:href="@{/logout}">Logout</a></li>
-          </ul>
-      </li>
-        <li class="nav-item">
-            <a class="nav-link active"sec:authorize="!isAuthenticated()" th:href="@{/login}">Login</a>
-        </li>
-
-
-    </ul>
-  </div>
+    </div>
 </nav>
 
 <section layout:fragment="content1">

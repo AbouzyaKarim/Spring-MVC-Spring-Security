@@ -13,22 +13,46 @@
 <img src="images/Capture.PNG">
 
 <hr>
-
-<h5>Interface:</h5>
 <p>Page home</p>
-<img src="images/Chome.PNG">
+<img src="images/cap.PNG">
+<hr>
+
+<h4>Interface de l'entité Patient</h4>
+<h5>Role Admin:</h5>
 
 <p>Page index</p>
-<img src="images/Cap.PNG">
+<img src="images/homeAD.PNG">
 
 <p>Formulaire d'ajout</p>
-<img src="images/ajouter.PNG">
+<img src="images/ajouterP.PNG">
 
 <p>Formulaire pour éditer</p>
-<img src="images/editer.PNG">
-
-<p>Formulaire Login</p>
-<img src="images/login.PNG">
+<img src="images/modifierP.PNG">
 
 <p>Rechercher un patient</p>
 <img src="images/search.PNG">
+
+<br>
+<br>
+<h5>Role User:</h5>
+<p>Page index</p>
+<img src="images/homeUS.PNG">
+
+<p>Rechercher un Patient</p>
+<img src="images/searchPUser.PNG">
+
+<hr>
+<hr>
+<h4>Interface de l'entité Medecin</h4>
+<h5>Role Admin:</h5>
+<p>Page index</p>
+<img src="images/indexADMED.PNG">
+
+<h5>Role User:</h5>
+<p>Page index</p>
+<img src="images/indexUserMED.PNG">
+
+
+<hr>
+<p>Formulaire Login</p>
+<img src="images/login.PNG">
